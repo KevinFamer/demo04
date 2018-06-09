@@ -1,4 +1,7 @@
 module Game {
+	/**
+	 * 游戏启动类
+	 */
 	class Main extends Core.BaseSingleton
 	{
 		/** 获取单例实例 */
