@@ -48,7 +48,7 @@ var Game;
             this.addChild(this._speedBar);
             this._player = new Game.Player(this._flyBar, this._speedBar);
             this._player.x = 32 * 8;
-            this._player.y = 32 * 14;
+            this._player.y = 32 * 4;
             this._player.on(Global.Const.PLAYER_STATE_DIE, this, this.playerDie);
             this.addChild(this._player);
             this._scoreTxt = new Text();

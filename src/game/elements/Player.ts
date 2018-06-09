@@ -44,9 +44,12 @@ module Game {
             this._actName = null;
             this._body = null;
             this._jumpCount = 0;
+            this._jumpCountMax = 2;
+
             this._vy = 0;
-            this._downSpeed = 0;
+            this._downSpeed = 2;
             this._maxVy = 32;
+
             this._bodyEffect1 = null;
             this._bodyEffect2 = null;
             this._spiritEffect = null;
@@ -179,7 +182,7 @@ module Game {
         jump():void 
         {
             if (this._jumpCount < this._jumpCountMax) {
-                this._vy = -30;
+                this._vy = -20;
                 this._jumpCount++;
                 this.gotoJump();
             } else {

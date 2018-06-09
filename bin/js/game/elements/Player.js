@@ -25,8 +25,9 @@ var Game;
             _this._actName = null;
             _this._body = null;
             _this._jumpCount = 0;
+            _this._jumpCountMax = 2;
             _this._vy = 0;
-            _this._downSpeed = 0;
+            _this._downSpeed = 1;
             _this._maxVy = 32;
             _this._bodyEffect1 = null;
             _this._bodyEffect2 = null;
@@ -134,7 +135,7 @@ var Game;
         // 二级跳
         Player.prototype.jump = function () {
             if (this._jumpCount < this._jumpCountMax) {
-                this._vy = -30;
+                this._vy = -20;
                 this._jumpCount++;
                 this.gotoJump();
             }
